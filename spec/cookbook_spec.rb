@@ -78,6 +78,7 @@ describe "compat_resource cookbook" do
       puts result.stdout
       puts result.stderr
     end
+  end
 
   it "when chef-client runs the test recipe, it succeeds" do
     result = run_chef("-o test::test,test")
